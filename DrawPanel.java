@@ -13,8 +13,10 @@ public class DrawPanel extends JPanel {
 
         for (int i = 0; i <= samples; i++) {
             //Diagonal principal
-            g.drawLine (0, 0, (i*coeficiente_width), (height - i*coeficiente_height));
-            g.drawLine (width, height, (i*coeficiente_width), (height - i*coeficiente_height));
+//            g.drawLine (0, 0, (i*coeficiente_width), (height - i*coeficiente_height));
+//            g.drawLine (width, height, (i*coeficiente_width), (height - i*coeficiente_height));
+            //Diagonal principal
+            g.drawLine ((i*coeficiente_width), 0, 0, (height - i*coeficiente_height));
         }
     }
 }
