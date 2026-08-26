@@ -9,7 +9,7 @@ public class App {
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         application.add( panel );
-        application.setSize( 250, 250 );
+        application.setSize( 225, 225 );
         application.setVisible( true );
     }
 }

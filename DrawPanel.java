@@ -7,8 +7,12 @@ public class DrawPanel extends JPanel {
 
         int width = getWidth();
         int height = getHeight();
+        int samples = 15;
+        int coeficiente_width = width / samples;
+        int coeficiente_height = height / samples;        
 
-        g.drawLine (0, 0, width, height);
-        g.drawLine (0, height, width, 0);
+        for (int i = 0; i <= samples; i++) {
+            g.drawLine (0, 0, (i*coeficiente_width), (height - i*coeficiente_height));
+        }
     }
 }
