@@ -15,8 +15,9 @@ public class DrawPanel extends JPanel {
             //Diagonal principal
 //            g.drawLine (0, 0, (i*coeficiente_width), (height - i*coeficiente_height));
 //            g.drawLine (width, height, (i*coeficiente_width), (height - i*coeficiente_height));
-            //Diagonal principal
+            //Diagonal secundária
             g.drawLine ((i*coeficiente_width), 0, 0, (height - i*coeficiente_height));
+            g.drawLine ((i*coeficiente_width), height, width, (height - i*coeficiente_height));
         }
     }
 }
